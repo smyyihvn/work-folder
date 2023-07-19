@@ -17,6 +17,7 @@ source:
   properties:
     branch: main
     repository: https://github.com/smyyihvn/work-folder
+    access_token_secret: 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
     # Optional: specify the name of an existing CodeStar Connections connection.
     # connection_name: a-connection
 
