@@ -49,7 +49,7 @@ def save_data(markdown, html):
             })
         return True
     except Exception:
-        logging.exception("Error on saving data into DynamoDB", exc_info=True)
+        logging.exception("Error on saving data into DynamoDB v2", exc_info=True)
         return False
 
 
