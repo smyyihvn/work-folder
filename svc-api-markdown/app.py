@@ -74,8 +74,10 @@ def to_markdown():
             input_markdown = request.json['text']
             html = markdown.markdown(input_markdown)
             db_status = save_data(input_markdown, html)
+            v2='v2'
+            html+=v2
             if db_status:
-                response_data = {"markdown": input_markdown, "html": html}
+                response_data = {"markdown": input_markdown, "html": html+'v2'}
                 response_status = 200
             else:                
                 response_data = {"error": "Unable to save data to database"}
