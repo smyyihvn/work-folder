@@ -55,7 +55,7 @@ def save_data(markdown, html):
 
 @app.route('/health', methods=['GET'])
 def healthcheck():
-    data = {"status v2": "ok"}
+    data = {"status": "ok"}
     return jsonify(data), 200
 
 
